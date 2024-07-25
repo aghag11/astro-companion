@@ -1,0 +1,123 @@
+
+:root {
+  --rose-taupe: #8B575C;
+  --delft-blue: #183059;
+  --linen: #F9EBE0;
+  --bondi-blue: #208AAE;
+  --oxford-blue: #0D2149;
+}
+
+/* general styling */
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--linen);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: var(--linen);
+}
+
+.title {
+  font-family: 'Play', sans-serif;
+  font-size: 2.5em;
+  color: var(--oxford-blue);
+  margin-bottom: 20px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: 70vh;
+  overflow-y: auto;
+  background-color: var(--oxford-blue);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-container .user {
+  align-self: flex-end;
+  background-color: var(--rose-taupe);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+  max-width: 75%;
+  font-family: 'Pridi', serif;
+}
+
+.chat-container .assistant {
+  align-self: flex-start;
+  background-color: var(--delft-blue);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+  max-width: 75%;
+  font-family: 'Pridi', serif;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid var(--oxford-blue);
+  outline: none;
+  font-size: 16px;
+  font-family: 'Cairo', sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background-color: var(--bondi-blue);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Cairo', sans-serif;
+}
+
+button:hover {
+  background-color: var(--oxford-blue);
+}
+
+button:active {
+  background-color: var(--delft-blue);
+}
+
+.listen-button {
+  padding: 10px 20px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  background-color: var(--bondi-blue);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Cairo', sans-serif;
+}
+
+.listen-button:hover {
+  background-color: var(--oxford-blue);
+}
+
+.listen-button:active {
+  background-color: var(--delft-blue);
+}

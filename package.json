@@ -1,0 +1,17 @@
+{
+  "name": "astro-companion",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "astro-companion-backend",
+    "astro-companion-frontend"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm start --prefix astro-companion-backend\" \"npm start --prefix astro-companion-frontend\""
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "concurrently": "^7.2.1"
+  }
+}
